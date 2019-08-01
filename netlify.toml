@@ -1,9 +1,5 @@
  [build]
   base    = "life-gpa"
   publish = "life-gpa/build"
-  command = "npm run build && npm run copy-redirects"
+  command = "npm run build"
   
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200 
