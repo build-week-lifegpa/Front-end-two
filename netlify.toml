@@ -1,7 +1,7 @@
  [build]
   base    = "life-gpa"
   publish = "life-gpa/build"
-  command = "yarn build"
+  command = "npm run build && npm run copy-redirects"
   
 [[redirects]]
   from = "/*"
