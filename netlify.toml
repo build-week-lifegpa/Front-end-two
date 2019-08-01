@@ -1,4 +1,4 @@
- [build]
+[ [build]]
   base    = "life-gpa"
   publish = "life-gpa/build"
   command = "yarn build"
