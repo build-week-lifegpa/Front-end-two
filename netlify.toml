@@ -1,4 +1,3 @@
-
  [build]
   base    = "life-gpa"
   publish = "life-gpa/build"
