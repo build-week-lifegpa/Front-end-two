@@ -1,0 +1,56 @@
+.mainDiv {
+    margin: auto;
+    height: 397px;
+    
+    
+    .spacer {
+        height: 150px;
+    }
+    .loginDiv {
+        form {
+            border-radius: 3px;
+            background: #fdfffc;
+            display: flex;
+            flex-direction: column;
+            width:80%;
+            margin: auto;
+            font-family: Montserrat;
+            h2 {
+                text-align: center;
+            }
+            input {
+                width: 90%;
+                margin: 3px auto;
+                height: 25px;
+                background: #e8e8e8
+            }
+            button{
+                width: 90%;
+                margin: 15px auto;
+                height: 35px;
+                border-radius: 3px;
+                background: #2ec4b6;
+            }
+            .buttonsignIn {
+                background-color: #FF9F1C;
+                border: none;
+            }
+
+            
+
+            p {
+                padding-left: .9rem;
+            }
+        }
+    }
+}
+
+.logo_container {
+    display: flex;
+    padding-top: 1.2rem;
+    padding-left: 1.2rem;    
+}
+.arrow {
+    padding-right: 1.2rem;
+}
+        

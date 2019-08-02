@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-
+import logo from "./styling/logo.svg"
 import { login } from "../actions";
+import {ReactComponent as Login1} from './styling/login.svg'
+import {ReactComponent as LifeGpa} from './styling/LifeGpa.svg'
+import {Link} from "react-router-dom"
+import './styling/login.scss'
 
 class Login extends Component {
   state = {
@@ -32,17 +36,26 @@ class Login extends Component {
       return <p>LOGGING IN...</p>;
     }
     return (
-      <div class="mainDiv">
+      
+      <div className="mainDiv">
+        <div className="logo_container">
+        {/* <img className="arrow" src={login1}></img> */}
+        <Link to="./AppHome"><Login1 className="arrow"/><img className="logo" src={logo}></img></Link>
+        {/* <img className="lifegpa" src={lifegpa}></img> */}
+        <LifeGpa className="lifegpa"/>
+        </div>
+        <div class='spacer'></div>
         <div class="loginDiv">
           <form onSubmit={this.login} class="loginForm">
-            <h2>Welcome to Life GPA!</h2>
+            <h2>Sign In</h2>
             <input class="inputStyle"
               type="text"
               name="username"
               value={this.state.credentials.username}
               onChange={this.changeHandler}
-              placeholder="username"
+              placeholder="Email"
             />
+            <label>Enter your username</label>
             <input class="inputStyle"
               type="password"
               name="password"
@@ -50,8 +63,11 @@ class Login extends Component {
               onChange={this.changeHandler}
               placeholder="password"
             />
-            <button class="buttonStyle">Log In</button>
+            <label>Enter your password</label>
             <p>Don't have an account?<a href='/register'> Register</a></p>
+            <button class="buttonsignIn">Sign In</button>
+            
+            
           </form>
         </div>
       </div>
