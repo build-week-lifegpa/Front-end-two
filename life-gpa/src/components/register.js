@@ -5,6 +5,7 @@ import lifegpa from './styling/LifeGpa.svg'
 import { register } from "../actions";
 import logo from "./styling/logo.svg"
 import './styling/register.scss'
+import {Link} from "react-router-dom"
 
 class Register extends Component {
   state = {
@@ -37,7 +38,7 @@ class Register extends Component {
     return (
       <div class="mainDiv">
         <div className="logo_container">
-          <img className="arrow" src={login1}></img>
+          <Link to="./AppHome"><img className="arrow" src={login1}></img></Link>
           <img className="logo" src={logo}></img>
           <img className="lifegpa" src={lifegpa}></img>
         </div>

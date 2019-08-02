@@ -4,7 +4,7 @@ import logo from "./styling/logo.svg"
 import { login } from "../actions";
 import {ReactComponent as Login1} from './styling/login.svg'
 import {ReactComponent as LifeGpa} from './styling/LifeGpa.svg'
-
+import {Link} from "react-router-dom"
 import './styling/login.scss'
 
 class Login extends Component {
@@ -40,7 +40,7 @@ class Login extends Component {
       <div className="mainDiv">
         <div className="logo_container">
         {/* <img className="arrow" src={login1}></img> */}
-        <Login1 className="arrow"/><img className="logo" src={logo}></img>
+        <Link to="./AppHome"><Login1 className="arrow"/><img className="logo" src={logo}></img></Link>
         {/* <img className="lifegpa" src={lifegpa}></img> */}
         <LifeGpa className="lifegpa"/>
         </div>

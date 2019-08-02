@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <Route path="/AppHome" component={AppHome} />
       <Route exact path="/register" render={props => <Register {...props} />} />
-      <Route exact path="/" render={props => <Login {...props} />} />
+      <Route exact path="/login" render={props => <Login {...props} />} />
       <PrivateRouter path="/protected" component={Protected}/>
     </div>
   );
